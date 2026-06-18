@@ -1,0 +1,33 @@
+/* Extra styles for local copy */
+.hero-content {
+  animation: rise 1s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.btn-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+#gallery-grid figure.hidden-item {
+  display: none;
+}
+
+.parallax-bg {
+  transform: translate3d(calc(var(--mx, 0px) * -0.3), calc(var(--my, 0px) * -0.3), -400px) scale(1.15);
+}
+
+.parallax-web {
+  transform: translate3d(calc(var(--mx, 0px) * 0.4), calc(var(--my, 0px) * 0.4), -200px);
+}
+
+.parallax-layer {
+  transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
+}
+
+.parallax-hero {
+  transform: perspective(1400px) rotateX(calc(var(--rx, 0deg) * 0.4)) rotateY(calc(var(--ry, 0deg) * 0.6)) translate3d(calc(var(--mx, 0px) * 0.6), calc(var(--my, 0px) * 0.6), 200px);
+  animation: float-y 6s ease-in-out infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
